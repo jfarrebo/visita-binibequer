@@ -5,43 +5,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <link rel="icon" type="image/png" href="/src/assets/images/favicon.png" />
     <!-- do not remove this line! -->
     <title>Binibèquer</title>
   </head>
   <body>
     <include src="./views/header.html"></include>
 
-    <main class="main-content">
+    <main>
       <include src="./views/hero.html"></include>
-      <include src="./views/story.html"></include>
-      <include src="./views/architecture.html"></include>
-      <include src="./views/experience.html"></include>
+      <include src="./views/highlight.html"></include>
+      <include src="./views/gallery.html"></include>
     </main>
-    <include src="./views/footer.html"></include>
 
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
-        <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
-        />
-      </picture>
-      <h1 class="uoc-title">
-        <i class="fas fa-university"></i>
-        Hello, UOC!
-      </h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <include src="./views/footer.html"></include>
 
     <script type="module" src="./assets/scripts/main.js"></script>
     <!-- do not remove this line! -->
