@@ -39,34 +39,32 @@ h4 {
 
 h1 {
   font-size: variables.rem(60);
+
+  @media (min-width: 768px) {
+    font-size: variables.rem(112);
+  }
 }
 
 h2 {
   font-size: variables.rem(36);
+
+  @media (min-width: 768px) {
+    font-size: variables.rem(48);
+  }
 }
 
 h3 {
   font-size: variables.rem(28);
+
+  @media (min-width: 768px) {
+    font-size: variables.rem(42);
+  }
 }
 
 h4 {
   font-size: variables.rem(22);
-}
 
-@media (min-width: 768px) {
-  h1 {
-    font-size: variables.rem(112);
-  }
-
-  h2 {
-    font-size: variables.rem(48);
-  }
-
-  h3 {
-    font-size: variables.rem(42);
-  }
-
-  h4 {
+  @media (min-width: 768px) {
     font-size: variables.rem(22);
   }
 }
