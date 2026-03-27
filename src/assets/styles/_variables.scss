@@ -1,19 +1,24 @@
 /* Variables and Functions */
 
 @use "sass:color";
+@use "sass:math";
 
 /* Variables */
 
 // Font families
-$font-family-sans-serif:
-  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
+$font-family-sans-serif: "Poppins", Arial, sans-serif;
 
 // Colors
-$uoc-corporate: #000078;
-$uoc-masterbrand: #ffd100;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+
+$text-color: #1d293d;
+$accent-color: #62748e;
+$footer-text-color: #cbd5e1;
+
+$main-bg-color: #fff;
+$alt-bg-color: #f8fafc;
+$emphasis-bg-color: #fdfbf7;
+
+$footer-bg-color: #0f172b;
 
 // Breakpoints
 $mqMinWidth: 420px;
@@ -22,5 +27,10 @@ $mqMinWidth: 420px;
 
 // Convert pixels to rems
 @function rem($px) {
-  @return ($px / 16) * 1rem;
+  @return math.div($px, 16) * 1rem;
+}
+
+// Spacing function (multiples of 8px)
+@function spacing($step) {
+  @return rem($step * 8);
 }
