@@ -35,7 +35,7 @@
     overflow: hidden;
 
     &:checked + .site-header__burger span:nth-child(1) {
-      transform: translateY(0.41rem) rotate(45deg);
+      transform: translateY(#{variables.rem(10)}) rotate(45deg);
     }
 
     &:checked + .site-header__burger span:nth-child(2) {
@@ -43,7 +43,7 @@
     }
 
     &:checked + .site-header__burger span:nth-child(3) {
-      transform: translateY(-0.41rem) rotate(-45deg);
+      transform: translateY(-#{variables.rem(10)}) rotate(-45deg);
     }
 
     &:checked ~ .site-header__nav {
